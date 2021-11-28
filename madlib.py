@@ -52,12 +52,12 @@ replacements = {
     'EVERYONE' : ['Everyone', 'Anyone', 'All people'],
     'CAN' : ['can', 'is able to', 'should', 'can already'],
     'COOK'  : ['cook', 'bake', 'chef it up'],
-    'SHARING' : ['Sharing', 'eating', 'smelling'],
+    'SHARING' : ['Sharing', 'Eating', 'Smelling'],
     'FOOD' : ['food', 'meals', 'snacks', 'cuisine'],
     'FEELS' : ['feels', 'makes you feel', 'lets you feel'],
     'SOUTH_KOREA' : ['South Korea', 'Japan', 'Italy', 'France'],
     'COUNTRY' : ['country', 'nation', 'place'],
-    'DIVERSE' : ['diverse', 'diversified', 'varied'],
+    'DIVERSE' : ['diverse', 'diversified', 'rich'],
     'FAMILY' : ['family', 'friends', 'sister'],
     'WENT' : ['went', 'visited', 'traveled there'],
     'LAST_YEAR' : ['last year', 'this summer', 'last winter'],
@@ -87,9 +87,9 @@ replacements = {
     'SMART' : ['smart', 'intelligent', 'bright', 'clever'],
     'ALSO' : ['Also', 'Plus', 'Moreover', 'In addition'],
     'LOYAL'  : ['loyal', 'trustworthy', 'trusty', 'nice'],
-    'MUSIC' : ['music', 'melodies', 'good songs', 'good singers'],
+    'MUSIC' : ['music', 'melodies', 'good tune', 'good harmony'],
     'GOOD' : ['Good', 'Well-made', 'Amazing', 'Heart-touching'],
-    'SONGS' : ['songs', 'music', 'lyrics'],
+    'SONGS' : ['songs', 'beats', 'lyrics'],
     'HAPPY' : ['happy', 'satisfied', 'blissful', 'comfortable', 'joyful'],
     'WORK'  : ['work', 'sleep', 'work out', 'study'],
     'SINGING' : ['singing', 'dancing', 'composing'],
@@ -97,7 +97,7 @@ replacements = {
     'BRUNO_MARS' : ['Bruno Mars', 'Ariana Grande', 'Billie Eilish', 'Beyonce'],
     }
 
-
+    
 submission = reddit.submission('r0yi9l')
 
 def generate_comment():
@@ -123,7 +123,7 @@ def generate_comment():
 
 
 i = 0
-while i<100:
+while i<10:
     submission.reply(generate_comment())
     print(i)
     time.sleep(600)
