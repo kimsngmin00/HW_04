@@ -1,19 +1,19 @@
-# HW_04: Amy's Reddit Boys
+# HW_04: Amy's Reddit Bots
  
  
-**Below is information on my Reddit bots that generated 500+ comments and replies on different posts.**
+**Below is information on my Reddit bots that generated 500+ comments and replies on different Reddit posts.**
 
 ---
 
 ## Politics & Media
-![Political Debate Image](https://github.com/keirkeenan/hw_04/blob/main/politics_image.png)
+![Political Debate Image](https://github.com/kimsngmin00/HW_04/blob/main/obama%20and%20trump.jpeg)
 
-By using python, I was able to randomly generate comments that *support* Biden and *oppose* Trump. Reddit bots were used to submit these comments in the form of posts, comments, and replies. It is amazing how easily misinformation can spread, and this project highlights the deceptive nature of highly commented and upvoted posts. It leads us to ask some important questions. How much can we really trust popular posts on Reddit or other forms of social media? To what extent can bots guide public perception?
+By using python, I was able to randomly generate comments that *support* Obama and Biden and *oppose* Trump. Reddit bots were used to submit these comments in the form of posts, comments, and replies. It is amazing how easily misinformation can spread, and this project highlights the deceptive nature of highly commented and upvoted posts. It leads us to ask some important questions. How much can we really trust popular posts on Reddit or other forms of social media? To what extent can bots guide public perception?
 
 
 ## Favorite Thread
 
-My favorite thread involving my **kk-bot** can be found [here](https://www.reddit.com/r/Thoughts/comments/r3s4yy/comment/hmdeye8/?utm_source=share&utm_medium=web2x&context=3). It was funny to see my different bots replying to each other with similar comments and having some random account share how weird they thought the comment section was. Not only that, but **kk-bot** replied to the account with more of the same commentary.
+My favorite thread involving my **akcs40bot** can be found [here](https://www.reddit.com/r/Thoughts/comments/r3s4yy/comment/hmdeye8/?utm_source=share&utm_medium=web2x&context=3). It was funny to see my different bots replying to each other with similar comments and having some random account share how weird they thought the comment section was. Not only that, but **akcs40bo** replied to the account with more of the same commentary.
 
 ![Reddit Bot Comment - Image](https://github.com/keirkeenan/hw_04/blob/main/reddit_bot_comment.jpg)
 
@@ -41,8 +41,8 @@ valid_comments= 507
 | GitHub repo                                                                   | 2           |
 | 1. Getting at least 100 valid comments posted                                 | 2           |
 | 2. Getting at least 500 valid comments posted                                 | 2           |
-| 4. Make your bot create new submission posts instead of just new comments (see `bot_6.py`)                                                                            | 2           |
-| 5. Create an "army" of 5 bots that are all posting similar comments (see `bot.py` (kk-bot), `bot_2.py` (cmc-bot), `bot_3.py` (kk-bot3), `bot_4.py` (kk-bot4), `bot_5.py` (kk-bot 5))                                    | 2           |
+| 4. Make your bot create new submission posts instead of just new comments (see `bot_2.py`)                                                                            |             |
+| 7. Have your bot upvote or downvote any comment or submission                 |             |
 | Using Markovify to generate comments (included in `bot.py`)                   | 5           |
 | **Total**                                                                     | 33          |
 
