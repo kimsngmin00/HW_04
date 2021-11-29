@@ -9,78 +9,53 @@ reddit = praw.Reddit('bot', user_agent='cs40')
 
 # copy your generate_comment function from the madlibs assignment here
 madlibs = [
-    "[PYTHON] is a [GREAT] [TOOL].  It [CAN_DO] [LOTS] of [STUFF]. [EVERYONE] [SHOULD] [LEARN] [PYTHON] and [BECOME] a [PROGRAMMER].",
-    "[COOKING] is a [GREAT] [HOBBY]. [EVERYONE] [CAN] [COOK]! [SHARING] [FOOD] also [FEELS] [GREAT]. I [LOVE] [FOOD].",
-    "[SOUTH_KOREA] is a [GREAT] [COUNTRY]. Their [FOOD] is [DIVERSE] and [GOOD]. My [FAMILY] [WENT] [LAST_YEAR]. I [WANT] to [VISIT] soon.",
-    "[CMC] is a [GREAT] [SCHOOL]. It has a [BEAUTIFUL] [CAMPUS] and [GREAT] [STUDENTS]. My [BROTHER] also [WENT_TO] [CMC]. I [LOVE] my [CMC] [FRIENDS].",
-    "[SLEEP] is [VERY] [IMPORTANT]. [EVERYONE] should [HAVE] a [HEALTHY] [SLEEP_SCHEDULE]. [TEA] or [MEDITATION] always help. Keep [YOURSELF] well [RESTED].",
-    "I [LOVE] [DOGS]. They are [VERY] [CUTE] and [SMART]. [ALSO], they are [VERY] [LOYAL].",
-    "I [LOVE] [MUSIC]. [GOOD] [SONGS] make me [HAPPY]. [MUSIC] also helps me [WORK]. I also [LOVE] [SINGING]. My favorite [ARTIST] is [BRUNO_MARS]."
+    "[OBAMA] is my [FAVORITE] [AMERICAN] [PRESIDENT]. He [DID] [LOTS] of [GOOD] [THINGS]. [EVERYONE] [SHOULD] [SUPPORT] him and his [WORDS].",
+    "[VOTING] is [IMPORTANT]. [EVERYONE] [SHOULD] [ELECT] who they [SUPPORT]. Our [VOTES] [MATTER].",
+    "I [WISH] [TRUMP] was never [ELECTED] [PRESIDENT]. He is [VERY] [GREEDY] and [EVIL]. [AMERICA] [DESERVED] better.",
+    "I [HATE] [HYPOCRITICAL] politicians. That's why I [SUPPORT] [OBAMA] but not [TRUMP].",
+    "[OBAMA] is my [IDOL]. I [WANT] to be like him [ONE_DAY]. He is a [GOOD] person.",
+    "The [POPULARITY] of [TRUMP] is [OVERRATED]. The [MEDIA] makes it look much more than what it actually is. Don't [BELIEVE] things easily."
     ]
 
 replacements = {
-    'PYTHON' : ['Python', 'Programming', 'Coding'],
-    'GREAT' : ['great', 'awesome', 'amazing', 'wonderful', 'fantastic'],
-    'TOOL' : ['tool', 'skill'],
-    'CAN_DO' : ['can do', 'is able to do', 'accomplishes', 'enables me to do', 'helps me do'],
+    'OBAMA' : ['Obama', 'Barack Obama'],
+    'FAVORITE' : ['favorite', 'favored', 'idol', 'fave'],
+    'AMERICAN' : ['U.S.', 'United States', 'American'],
+    'PRESIDENT' : ['president', 'leader', 'politician'],
+    'DID' : ['did', 'has done', 'is doing', 'will do', 'accomplished', 'achieved'],
     'LOTS'  : ['lots', 'a whole lot', 'ridiculous amounts'],
-    'STUFF' : ['stuff', 'things', 'fun things'],
-    'SHOULD' : ['should', 'must', 'need to'],
-    'BECOME' : ['become', 'turn into', 'try to be'],
-    'PROGRAMMER' : ['programmer', 'developer', 'pythonista', 'software engineer'],
-    'LEARN' : ['learn', 'master', 'study'],
-    'COOKING' : ['Cooking', 'Baking', 'Making food'],
-    'HOBBY' : ['hobby', 'fun', 'skill'],
-    'EVERYONE' : ['Everyone', 'Anyone', 'All people'],
-    'CAN' : ['can', 'is able to', 'should', 'can already'],
-    'COOK'  : ['cook', 'bake', 'chef it up'],
-    'SHARING' : ['Sharing', 'eating', 'smelling'],
-    'FOOD' : ['food', 'meals', 'snacks', 'cuisine'],
-    'FEELS' : ['feels', 'makes you feel', 'lets you feel'],
-    'SOUTH_KOREA' : ['South Korea', 'Japan', 'Italy', 'France'],
-    'COUNTRY' : ['country', 'nation', 'place'],
-    'DIVERSE' : ['diverse', 'diversified', 'varied'],
-    'FAMILY' : ['family', 'friends', 'sister'],
-    'WENT' : ['went', 'visited', 'traveled there'],
-    'LAST_YEAR' : ['last year', 'this summer', 'last winter'],
-    'WANT' : ['want', 'hope', 'wish'],
-    'VISIT' : ['visit', 'go', 'travel'],
-    'CMC' : ['CMC', 'Claremont McKenna College', 'Pomona College', 'Scripps College', 'Pitzer College', 'Harvey Mudd College'],
-    'SCHOOL' : ['school', 'college', 'liberal arts college'],
-    'BEAUTIFUL' : ['beautiful', 'pretty', 'fascinating'],
-    'CAMPUS' : ['campus', 'school area', 'landscape'],
-    'STUDENTS'  : ['students', 'faculty', 'staff'],
-    'BROTHER' : ['brother', 'sister', 'mom', 'dad'],
-    'WENT_TO' : ['went to', 'studied at', 'graduated'],
-    'LOVE' : ['love', 'adore', 'really like', 'like'],
-    'FRIENDS' : ['friends', 'peers', 'classmates', 'professors'],
-    'SLEEP' : ['Sleep', 'Sleeping', 'Sleep schedule'],
-    'VERY' : ['very', 'really', 'extremely', 'greatly', 'so'],
-    'IMPORTANT' : ['important', 'crucial', 'essential'],
-    'HAVE' : ['have', 'maintain', 'develop', 'start'],
-    'HEALTHY'  : ['healthy', 'regular', 'good', 'nice'],
-    'SLEEP_SCHEDULE' : ['sleep schedule', 'sleep pattern', 'sleeping pattern'],
-    'TEA' : ['Tea', 'Warm tea', 'Warm milk', 'Books'],
-    'MEDITATION' : ['meditation', 'listening to music', 'ASMR videos'],
-    'YOURSELF' : ['yourself', 'your friends', 'you body', 'your family'],
-    'RESTED' : ['rested', 'slept'],
-    'DOGS' : ['dogs', 'cats', 'birds', 'rabbits'],
-    'CUTE' : ['cute', 'lovely', 'adorable'],
-    'SMART' : ['smart', 'intelligent', 'bright', 'clever'],
-    'ALSO' : ['Also', 'Plus', 'Moreover', 'In addition'],
-    'LOYAL'  : ['loyal', 'trustworthy', 'trusty', 'nice'],
-    'MUSIC' : ['music', 'melodies', 'good songs', 'good singers'],
-    'GOOD' : ['Good', 'Well-made', 'Amazing', 'Heart-touching'],
-    'SONGS' : ['songs', 'music', 'lyrics'],
-    'HAPPY' : ['happy', 'satisfied', 'blissful', 'comfortable', 'joyful'],
-    'WORK'  : ['work', 'sleep', 'work out', 'study'],
-    'SINGING' : ['singing', 'dancing', 'composing'],
-    'ARTIST' : ['artist', 'musician', 'singer'],
-    'BRUNO_MARS' : ['Bruno Mars', 'Ariana Grande', 'Billie Eilish', 'Beyonce'],
+    'GOOD' : ['good', 'great', 'groundbreaking', 'mindblowing'],
+    'THINGS' : ['stuff', 'things', 'projects', 'tasks'],
+    'EVERYONE' : ['Everyone', 'People', 'All people', 'All votes'],
+    'SHOULD' : ['should', 'must', 'better', 'is encouraged to'],
+    'SUPPORT' : ['support', 'side with', 'endorse'],
+    'WORDS' : ['words', 'actions', 'campaigns'],
+    'VOTING' : ['Voting', 'Casting votes', 'Participating in elections'],
+    'IMPORTANT' : ['important', 'crucial', 'essential', 'critical'],
+    'ELECT' : ['elect', 'vote for', 'cast their vote for'],
+    'VOTES' : ['votes', 'opinions', 'ballots', 'voices', 'actions'],
+    'MATTER' : ['matter', 'make changes', 'change the world', 'are influential'],
+    'WISH' : ['wish', 'hope', 'really wish'],
+    'TRUMP' : ['Trump', 'Donald Trump'],
+    'ELECTED' : ['elected', 'voted', 'made'],
+    'VERY' : ['very', 'really', 'extremely', 'too', 'so'],
+    'GREEDY' : ['greedy', 'impatient', 'selfish'],
+    'EVIL' : ['evil', 'tempered', 'short-tempered', 'inconsiderate'],
+    'AMERICA' : ['America', 'The United States of America', 'The United States', 'The U.S.', 'We'],
+    'DESERVED' : ['deserved', 'wanted', 'expected', 'needed'],
+    'HATE' : ['hate', 'despise', 'dislike', 'do not support', 'criticize'],
+    'HYPOCRITICAL' : ['hypocritical', 'pretentious', 'dishonest', 'deceiving', 'lying', 'two-faced'],
+    'IDOL'  : ['idol', 'tole model', 'hero', 'superstar'],
+    'WANT' : ['want', 'wish', 'hope', 'aspire'],
+    'ONE_DAY' : ['one day', 'in the future', 'when I grow up', 'some day'],
+    'POPULARITY' : ['popularity', 'fame', 'likeability', 'fan base', 'number of supporters'],
+    'OVERRATED' : ['overrated', 'overestimated', 'overfeared'],
+    'MEDIA' : ['media', 'news', 'online news'],
+    'BELIEVE' : ['believe', 'trust', 'accept', 'credit']
     }
 
 
-submission = reddit.submission('r324ol')
+submission = reddit.submission('r4nt42')
 
 def generate_comment():
     '''
@@ -107,7 +82,7 @@ def generate_comment():
 
 # select a "home" submission in the /r/BotTown subreddit to post to,
 # and put the url below
-submission_url = 'https://www.reddit.com/r/cs40tests/comments/r324ol/rcs40tests_lounge/'
+submission_url = 'https://old.reddit.com/r/BotTown2/comments/r4nt42/the_uk_labour_party_is_now_in_a_massive_sixpoint/'
 submission = reddit.submission(url=submission_url)
 
 # each iteration of this loop will post a single comment;
@@ -120,6 +95,7 @@ submission = reddit.submission(url=submission_url)
 # you probably don't want it to run in an infinite loop;
 # you can change this while loop to an if statement to make the code run only once
 while True:
+
 
     # printing the current time will help make the output messages more informative
     # since things on reddit vary with time
@@ -151,8 +127,6 @@ while True:
     # and an if statement to check whether the comment is authored by you or not
     not_my_comments = []
     for comment in all_comments:
-        #print('comment.author=', comment.author)
-        #print('type(comment.author)=', type(comment.author))
         if str(comment.author) != 'akcs40bot':
             not_my_comments.append(comment)
 
@@ -225,12 +199,15 @@ while True:
 
     # FIXME (task 5): select a new submission for the next iteration;
     # your newly selected submission should be randomly selected from the 5 hottest submissions
-    hot_subs = []
-    for submission in reddit.subreddit('learnpython').hot(limit=5):
-        hot_sub = hot_subs.append(submission.url)
-    submission_url = str(random.choice(hot_subs))
-    submission = reddit.submission(url=submission_url)
-    print(submission_url)
+    try:
+        hot_subs = []
+        for submission in reddit.subreddit('BotTown2').hot(limit=5):
+            hot_sub = hot_subs.append(submission.url)
+        submission_url = str(random.choice(hot_subs))
+        submission = reddit.submission(url=submission_url)
+        print(submission_url)
+    except praw.exceptions.InvalidURL:
+        pass
 
     # We sleep just for 1 second at the end of the while loop.
     # This doesn't avoid rate limiting
