@@ -1,7 +1,7 @@
 # HW_04: Amy's Reddit Boys
  
  
-**Below is information on the Reddit bots I created to generate hundreds of posts, comments, and replies pertaining to politics.**
+**Below is information on my Reddit bots that generated 500+ comments and replies on different posts.**
 
 ---
 
