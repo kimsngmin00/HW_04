@@ -44,7 +44,7 @@ valid_comments= 525
 | 1. Getting at least 100 valid comments posted                                 | 2           |
 | 2. Getting at least 500 valid comments posted                                 | 2           |
 | 4. Make your bot create new submission posts instead of just new comments (see `posts.py`)                                                                            | 2           |
-| 7. Have your bot upvote or downvote any comment or submission                 | 2           |
+| 7. Have your bot upvote or downvote any comment or submission (see `upvote.py`)| 2           |
 | Using Markovify to generate comments (included in `markovify.py`)             | 5           |
 | **Total**                                                                     | 33          |
 
