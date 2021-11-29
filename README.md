@@ -44,7 +44,7 @@ valid_comments= 525
 | 1. Getting at least 100 valid comments posted                                 | 2           |
 | 2. Getting at least 500 valid comments posted                                 | 2           |
 | 4. Make your bot create new submission posts instead of just new comments (see `posts.py`)                                                                            | 2           |
-| 7. Have your bot upvote or downvote any comment or submission                 |             |
+| 7. Have your bot upvote or downvote any comment or submission                 | 2           |
 | Using Markovify to generate comments (included in `markovify.py`)             | 5           |
 | **Total**                                                                     | 33          |
 
@@ -82,15 +82,28 @@ KeyboardInterrupt
 Below is the end part of the output of running the `upvote.py` for the **akcs40bot**:
 
 ```
-len(comments)= 692
-len(top_level_comments)= 184
-len(replies)= 508
-len(valid_top_level_comments)= 38
-len(not_self_replies)= 507
-len(valid_replies)= 487
-========================================
-valid_comments= 525
-========================================
+votes_for_submissions= 109
+votes_for_comments= 496
+votes_for_submissions= 109
+votes_for_comments= 497
+votes_for_submissions= 109
+votes_for_comments= 498
+votes_for_submissions= 109
+votes_for_comments= 499
+votes_for_submissions= 109
+votes_for_comments= 500
+votes_for_submissions= 109
+votes_for_comments= 501
+votes_for_submissions= 109
+votes_for_comments= 502
+votes_for_submissions= 109
+votes_for_comments= 503
+votes_for_submissions= 109
+votes_for_comments= 504
+^CTraceback (most recent call last):
+  File "/Users/kimseungmin/Documents/GitHub/HW_04/upvote.py", line 44, in <module>
+    time.sleep(600)
+KeyboardInterrupt
 ```
 
 
