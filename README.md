@@ -1,4 +1,4 @@
-# HW_04: Amy's Reddit Boys
+# HW_04: Amy's Reddit Bots
  
  
 **Below is information on my Reddit bots that generated 500+ comments and replies on different posts.**
