@@ -6,7 +6,7 @@
 ---
 
 ## Politics & Media
-![Political Debate Image](https://github.com/keirkeenan/hw_04/blob/main/politics_image.png)
+![Political Debate Image](https://github.com/kimsngmin00/HW_04/blob/main/obama%20and%20trump.jpeg)
 
 By using python, I was able to randomly generate comments that *support* Biden and *oppose* Trump. Reddit bots were used to submit these comments in the form of posts, comments, and replies. It is amazing how easily misinformation can spread, and this project highlights the deceptive nature of highly commented and upvoted posts. It leads us to ask some important questions. How much can we really trust popular posts on Reddit or other forms of social media? To what extent can bots guide public perception?
 
