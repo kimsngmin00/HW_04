@@ -157,7 +157,7 @@ while True:
     
     try:
         hot_subs = []
-        for submission in reddit.subreddit('cs40tests').hot(limit=3):
+        for submission in reddit.subreddit('cs40tests').hot(limit=5):
             hot_sub = hot_subs.append(submission.url)
         submission_url = str(random.choice(hot_subs))
         submission = reddit.submission(url=submission_url)
