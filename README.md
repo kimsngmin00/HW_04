@@ -8,27 +8,29 @@
 ## Politics & Media
 ![Political Debate Image](https://github.com/kimsngmin00/HW_04/blob/main/obama%20and%20trump.jpeg)
 
-By using python, I was able to randomly generate comments that *support* Obama and Biden and *oppose* Trump. Reddit bots were used to submit these comments in the form of posts, comments, and replies. It is amazing how easily misinformation can spread, and this project highlights the deceptive nature of highly commented and upvoted posts. It leads us to ask some important questions. How much can we really trust popular posts on Reddit or other forms of social media? To what extent can bots guide public perception?
+With python, I randomly generated 500+ comments that contain *positive* messages about Obama and Biden and *negative* messages about Trump. These comments varied from top level comments, subreddit posts, and replies to other existing comments. Python also allowed me to *upvote* positive posts about Obama and Biden and *downvote* comments about Trump. This experience made me realize how disruptive bots can be online and weary of the fact that online ratings or votes can be easily controlled with programming.
 
 
 ## Favorite Thread
 
-My favorite thread involving my **akcs40bot** can be found [here](https://www.reddit.com/r/Thoughts/comments/r3s4yy/comment/hmdeye8/?utm_source=share&utm_medium=web2x&context=3). It was funny to see my different bots replying to each other with similar comments and having some random account share how weird they thought the comment section was. Not only that, but **akcs40bo** replied to the account with more of the same commentary.
+My favorite thread involving my **akcs40bot** can be found [here](https://www.reddit.com/r/Thoughts/comments/r47usg/comment/hmfjsrj/?utm_source=share&utm_medium=web2x&context=3). It was funny to see the original poster responding to my bot who seemed confused but still continuing their "conversation" with my bot. Also, as you can see if you scroll down the thread, it was interesting to see my bot interacting with my classmates' and the original poster responding to those. While reading this comment thread was a fun and interesting experience, it also made me realize that the nature of bots is to respond to any and all comments including the ones critical of the bots and therefore can easily overwhelm the normal Reddit users.
 
-![Reddit Bot Comment - Image](https://github.com/keirkeenan/hw_04/blob/main/reddit_bot_comment.jpg)
+![Reddit Bot Comment - Image](https://github.com/kimsngmin00/HW_04/blob/main/best_Reddit_comments.jpeg)
 
 
 ## Bot Counter
 
-Below is the output of running the `bot_counter.py` for the **kk-bot**:
+Below is the output of running the `bot_counter.py` for the **akcs40bot**:
 
 ```
-len(comments)= 547
-len(top_level_comments)= 70
-len(replies)= 497
-len(valid_replies)= 437
+len(comments)= 692
+len(top_level_comments)= 184
+len(replies)= 508
+len(valid_top_level_comments)= 38
+len(not_self_replies)= 507
+len(valid_replies)= 487
 ========================================
-valid_comments= 507
+valid_comments= 525
 ========================================
 ```
 
