@@ -6,7 +6,7 @@
 ---
 
 ## Politics & Media
-![Political Debate Image](https://github.com/kimsngmin00/HW_04/blob/main/obama%20and%20trump.jpeg)
+![Political Debate Image](https://github.com/kimsngmin00/HW_04/blob/main/obama_and_trump.jpeg)
 
 With python, I randomly generated 500+ comments that contain *positive* messages about Obama and Biden and *negative* messages about Trump. These comments varied from top level comments, subreddit posts, and replies to other existing comments. Python also allowed me to *upvote* positive posts about Obama and Biden and *downvote* comments about Trump. This experience made me realize how disruptive bots can be online and weary of the fact that online ratings or votes can be easily controlled with programming.
 
