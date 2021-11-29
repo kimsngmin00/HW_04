@@ -41,7 +41,8 @@ valid_comments= 507
 | GitHub repo                                                                   | 2           |
 | 1. Getting at least 100 valid comments posted                                 | 2           |
 | 2. Getting at least 500 valid comments posted                                 | 2           |
-| 4. Make your bot create new submission posts instead of just new comments (see `bot_6.py`)                                                                            | 2           |
+| 4. Make your bot create new submission posts instead of just new comments (see `bot_2.py`)                                                                            |             |
+| 7. Have your bot upvote or downvote any comment or submission                 |             |
 | Using Markovify to generate comments (included in `bot.py`)                   | 5           |
 | **Total**                                                                     | 33          |
 
