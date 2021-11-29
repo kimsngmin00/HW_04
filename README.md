@@ -48,7 +48,6 @@ valid_comments= 525
 | Using Markovify to generate comments (included in `markovify.py`)             | 5           |
 | **Total**                                                                     | 33          |
 
----
 
 ## Extra Credit Results
 ### Post Submissions
@@ -95,4 +94,5 @@ valid_comments= 525
 ```
 
 
+---
 **NOTE:** [here](https://github.com/mikeizbicki/cmc-csci040/tree/2021fall/hw_04) is the link to the course project.
