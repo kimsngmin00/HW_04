@@ -44,10 +44,68 @@ valid_comments= 525
 | 1. Getting at least 100 valid comments posted                                 | 2           |
 | 2. Getting at least 500 valid comments posted                                 | 2           |
 | 4. Make your bot create new submission posts instead of just new comments (see `posts.py`)                                                                            | 2           |
-| 7. Have your bot upvote or downvote any comment or submission                 |             |
-| Using Markovify to generate comments (included in `bot.py`)                   | 5           |
+| 7. Have your bot upvote or downvote any comment or submission                 | 2           |
+| Using Markovify to generate comments (included in `markovify.py`)             | 5           |
 | **Total**                                                                     | 33          |
 
----
 
+## Extra Credit Results
+### Post Submissions
+Below is the end part of the output of running the `posts.py` for the **akcs40bot**:
+
+```
+link_post_count= 96
+total_post_count= 96
+link_post_count= 97
+total_post_count= 97
+link_post_count= 98
+total_post_count= 98
+link_post_count= 99
+total_post_count= 99
+link_post_count= 100
+total_post_count= 100
+link_post_count= 101
+total_post_count= 101
+link_post_count= 102
+total_post_count= 102
+link_post_count= 103
+total_post_count= 103
+^CTraceback (most recent call last):
+  File "/Users/kimseungmin/Documents/GitHub/HW_04/posts.py", line 25, in <module>
+    time.sleep(600)
+KeyboardInterrupt
+```
+
+
+
+### Upvote/Downvote
+Below is the end part of the output of running the `upvote.py` for the **akcs40bot**:
+
+```
+votes_for_submissions= 109
+votes_for_comments= 496
+votes_for_submissions= 109
+votes_for_comments= 497
+votes_for_submissions= 109
+votes_for_comments= 498
+votes_for_submissions= 109
+votes_for_comments= 499
+votes_for_submissions= 109
+votes_for_comments= 500
+votes_for_submissions= 109
+votes_for_comments= 501
+votes_for_submissions= 109
+votes_for_comments= 502
+votes_for_submissions= 109
+votes_for_comments= 503
+votes_for_submissions= 109
+votes_for_comments= 504
+^CTraceback (most recent call last):
+  File "/Users/kimseungmin/Documents/GitHub/HW_04/upvote.py", line 44, in <module>
+    time.sleep(600)
+KeyboardInterrupt
+```
+
+
+---
 **NOTE:** [here](https://github.com/mikeizbicki/cmc-csci040/tree/2021fall/hw_04) is the link to the course project.
