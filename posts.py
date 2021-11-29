@@ -22,7 +22,7 @@ for submission in reddit.subreddit('whitehouse').hot(limit=100):
         total_post_count += 1
         print('link_post_count=', link_post_count)
         print('total_post_count=', total_post_count)
-        time.sleep(60)
+        time.sleep(600)
 
 self_post_count = 0
 for submission in reddit.subreddit('elections').hot(limit=100):
@@ -37,5 +37,5 @@ for submission in reddit.subreddit('elections').hot(limit=100):
         total_post_count += 1
         print('self_post_count=', self_post_count)
         print('total_post_count=', total_post_count)
-        time.sleep(60)
+        time.sleep(600)
 
